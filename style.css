@@ -1,0 +1,95 @@
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.quiz-controls {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #2a2a2a;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #e0e0e0;
+}
+
+.quiz-controls button {
+  padding: 8px 15px;
+  background: #5a7fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.quiz-controls button:hover {
+  background: #4a6a8c;
+}
+
+.question-block {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #333;
+  color: #e0e0e0;
+}
+
+.check-single-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s ease;
+}
+
+.check-single-btn:hover {
+  background: #666;
+}
+
+.single-result {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.question-result {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+#results h2 {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Dodatkowe style dla tekstu w elementach */
+.question-block p, .question-block label {
+  color: #e0e0e0;
+}
+
+/* Styl dla inputów w ciemnym motywie */
+.question-block input[type="text"],
+.question-block input[type="number"],
+.question-block select {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  padding: 5px;
+  border-radius: 3px;
+}
