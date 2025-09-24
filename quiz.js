@@ -1594,5 +1594,221 @@ const quizData = [
     },
     "correctAnswer": "b",
     "explanation": "W 64-bitowej architekturze Intel (tryb EM64T), procesory posiadają 16 rejestrów `ymm` (od `YMM0` do `YMM15`) [4, 77]."
+  },
+  {
+    "question": "Tryb chroniony po raz pierwszy Intel wprowadził w procesorze:",
+    "answers": {
+      "a": "80186",
+      "b": "80286",
+      "c": "803086",
+      "d": "80486 DX",
+      "e": "Pentium II"
+    },
+    "correctAnswer": "b",
+    "explanation": ""
+  },
+  {
+    "question": "Superskalarność wynika z:",
+    "answers": {
+      "a": "wykonywania instrukcji w potoku",
+      "b": "wykonywania instrukcji poza kolejnością",
+      "c": "systemu o zredukowanej liczbie rozkazów",
+      "d": "wykonywania spekulatywnego rozkazów",
+      "e": "żadne z powyższych"
+    },
+    "correctAnswer": "a",
+    "explanation": ""
+  },
+  {
+    "question": "W którym trybie adresowania wartość argumentu nie jest pobierana z pamięci danych:",
+    "answers": {
+      "a": "pośrednim-indeksowym",
+      "b": "pośrednim-bazowym",
+      "c": "natychmiastowym",
+      "d": "rejestrowym",
+      "e": "żadne z powyższych"
+    },
+    "correctAnswer": "d",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji jest poprawna:",
+    "answers": {
+      "a": "fbst bcdint",
+      "b": "fchs st(3)",
+      "c": "ftan",
+      "d": "fcmovenbe st,st(3)",
+      "e": "fsqrt st(4)"
+    },
+    "correctAnswer": "d",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji nie zmienia flagi C:",
+    "answers": {
+      "a": "inc",
+      "b": "adcx",
+      "c": "neg",
+      "d": "cmpxchg",
+      "e": "wszystkie zmieniają"
+    },
+    "correctAnswer": "b",
+    "explanation": ""
+  },
+  {
+    "question": "Po wykonaniu instrukcji: mov eax, 0eca87531h | xor eax, 0f00f0ffch | shl eax, 0ch | bsr eax, eax",
+    "answers": {
+      "a": "0eca78531h",
+      "b": "0a7853100h",
+      "c": "000075000h",
+      "d": "00000001fh",
+      "e": "00000001eh"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji nie zapisuje wyniku porównania w flagach koprocesora:",
+    "answers": {
+      "a": "fucomp",
+      "b": "ftst",
+      "c": "fcomip",
+      "d": "wszystkie powyższe zapisują",
+      "e": "wszysktie powyższe nie zapisują"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji umożliwia całkowitą operację typu: 5*a+13?",
+    "answers": {
+      "a": "lea",
+      "b": "madd",
+      "c": "addx",
+      "d": "fadd",
+      "e": "żadna z powyższych"
+    },
+    "correctAnswer": "a",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji pozwala na znalezienie w tablicy wartości różnej od podanego podwójnego słowa 32-bitowego?",
+    "answers": {
+      "a": "movsd",
+      "b": "lodsd",
+      "c": "cmpsd",
+      "d": "scasd",
+      "e": "żadna z powyższych"
+    },
+    "correctAnswer": "d",
+    "explanation": ""
+  },
+  {
+    "question": "Która instrukcja nie istnieje:",
+    "answers": {
+      "a": "std",
+      "b": "stc",
+      "c": "stz",
+      "d": "sti",
+      "e": "wszystkie istnieją"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "W procesorach Skylake Intel po raz pierwszy wprowadził:",
+    "answers": {
+      "a": "rejestry 64-bitowe",
+      "b": "pięciostopniowy potok instrukcji",
+      "c": "dwa rodzaje rdzeni",
+      "d": "instrukcje SSE 4.2",
+      "e": "instrukcje AVX512"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
+    "question": "Pierwszy procesor Intela wyposażony w instrukcje AVX to:",
+    "answers": {
+      "a": "Pentium",
+      "b": "Pentium 4",
+      "c": "Sandy Bridge",
+      "d": "Haswell",
+      "e": "Skylake"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Do wyzerowania najmłodszego bitu równego 1 służy instrukcja:",
+    "answers": {
+      "a": "popcnt",
+      "b": "tzcnt",
+      "c": "lzcnt",
+      "d": "bextr",
+      "e": "blsr"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
+    "question": "Ile bajtów mieści się w rejestrze R8D:",
+    "answers": {
+      "a": "4",
+      "b": "8",
+      "c": "16",
+      "d": "32",
+      "e": "żadne z powyższych"
+    },
+    "correctAnswer": "a",
+    "explanation": ""
+  },
+  {
+    "question": "Instrukcja mieszająca liczby podwójnej precyzji z dwóch rejestrów na podstawie rejestru maski to:",
+    "answers": {
+      "a": "vshufpd",
+      "b": "vblendvpd",
+      "c": "vpackusdb",
+      "d": "vhaddpd",
+      "e": "vblendpd"
+    },
+    "correctAnswer": "b",
+    "explanation": ""
+  },
+  {
+    "question": "Operację AVX obliczającą przybliżoną wartość odwrotności pierwiastka z elementów wektora liczb rzeczywistych pojedynczej precyzji realizuje instrukcja:",
+    "answers": {
+      "a": "vrcpps",
+      "b": "vsqrtps",
+      "c": "vdpps",
+      "d": "vrsqrtps",
+      "e": "nie ma takiej instrukcji"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
+    "question": "Która operacja konwertuje liczbę całkowitą na liczbę pojedynczej precyzji:",
+    "answers": {
+      "a": "vcvtsd2ss",
+      "b": "vcvttss2sd",
+      "c": "vcvttsi2ss",
+      "d": "vcvttss2si",
+      "e": "żadna z powyższych"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Podczas mnożenia liczb podwójnej precyzji (skalarów) z rejestrów wektorowych xmm bity (127..64) celu",
+    "answers": {
+      "a": "pozostają bez zmiany",
+      "b": "pochodzą ze źródła 1",
+      "c": "pochodzą ze źródła 2",
+      "d": "są zerowane",
+      "e": "są niezdefiniowane"
+    },
+    "correctAnswer": "b",
+    "explanation": ""
   }
 ];
