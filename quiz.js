@@ -324,7 +324,7 @@ const quizData = [
     "explanation": "W trybie IA-32 (a także w EM64T) występuje 6 rejestrów segmentowych: cs, ds, es, ss, fs, gs [20]."
   },
   {
-    "question": "Do odwołanie się do zmiennych lokalnych podprogramu stosuje się segment wskazany przez rejestr**",
+    "question": "Do odwołania się do zmiennych lokalnych podprogramu stosuje się segment wskazany przez rejestr**",
     "answers": {
       "a": "cs",
       "b": "ds",
@@ -332,8 +332,8 @@ const quizData = [
       "d": "ss",
       "e": "gs"
     },
-    "correctAnswer": "b",
-    "explanation": "W segmencie `ds` znajdują się m.in. zmienne lokalne [21]."
+    "correctAnswer": "d",
+    "explanation": ""
   },
   {
     "question": "Do odwołania się do zmiennych lokalnych stosuje się rejestr**",
