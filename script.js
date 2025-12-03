@@ -56,6 +56,8 @@ function renderQuiz(data, container, isRandom = true) {
       const randomQuestions = getRandomQuestions(quizData, 21);
       renderQuiz(randomQuestions, quizContainer, true);
       if (resultsContainer) resultsContainer.innerHTML = '';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 
