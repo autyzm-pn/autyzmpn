@@ -200,8 +200,8 @@ const quizData = [
       "d": "Pentium III",
       "e": "Pentium MMX"
     },
-    "correctAnswer": "b",
-    "explanation": "Źródła nie zawierają bezpośredniej informacji o tym, który procesor jako pierwszy wprowadził instrukcje SSE. Wskazano jedynie, że \"Pentium MMX (...) wprowadził instrukcje\" [12], ale zdanie to jest niekompletne."
+    "correctAnswer": "d",
+    "explanation": ""
   },
   {
     "question": "Instrukcje AVX Intel wprowadził po raz pierwszy w procesorze**",
