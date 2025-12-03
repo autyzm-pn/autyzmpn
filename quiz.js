@@ -1392,6 +1392,18 @@ const quizData = [
     "explanation": "Instrukcja `les` (load ES and pointer) ładuje dane do dwóch rejestrów: rejestru ogólnego przeznaczenia oraz rejestru segmentowego `es` [27, 35]."
   },
   {
+    "question": "Która instrukcja zapisuje do dwu rejestrów**",
+    "answers": {
+      "a": "lea",
+      "b": "xlatb",
+      "c": "movsxd",
+      "d": "btr",
+      "e": "żadna z powyższych"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
     "question": "Która instrukcja może zmienić rejestr cs**",
     "answers": {
       "a": "xlatb",
@@ -1797,6 +1809,42 @@ const quizData = [
       "e": "żadne z powyższych"
     },
     "correctAnswer": "a",
+    "explanation": ""
+  },
+  {
+    "question": "Która z instrukcji pozwala na znalezienie różnicy w podanych tabelach?",
+    "answers": {
+      "a": "movsd",
+      "b": "lodsw",
+      "c": "cmpsq",
+      "d": "scasb",
+      "e": "stosb"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Prefix LOCK może odnosić się tylko do wybranych instrukcji, których argument:",
+    "answers": {
+      "a": "źródła jest w pamięci",
+      "b": "celu jest w pamięci",
+      "c": "źródła jest rejestrem",
+      "d": "celu jest rejestrem",
+      "e": "żadne z powyższych"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
+    "question": "Wykonywanie spekulatywne po raz pierwszy Intel zastosował w procesorze:",
+    "answers": {
+      "a": "80286",
+      "b": "80386",
+      "c": "80486DX",
+      "d": "Pentium",
+      "e": "Pentium Pro"
+    },
+    "correctAnswer": "e",
     "explanation": ""
   },
   {
