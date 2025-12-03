@@ -228,18 +228,6 @@ const quizData = [
     "explanation": "W trzeciej generacji procesorów Intel (Ivy Bridge) wprowadzono generator liczb losowych na bazie szumów termicznych procesora [13]."
   },
   {
-    "question": "128 MiB pamięci podręcznej eDRAM posiadał procesor**",
-    "answers": {
-      "a": "Coffee Lake",
-      "b": "Broadwell",
-      "c": "Hashwell",
-      "d": "Sandy Bridge",
-      "e": "nie było takiej pamięci"
-    },
-    "correctAnswer": "w",
-    "explanation": "Zgodnie ze źródłem, jest to \"błędne pytanie\", ponieważ \"wszystkie powyższe procesory, poza Sandy Bridge, posiadały eDRAM w wariancie 128 MiB\" [13]. Oznacza to, że Coffee Lake, Broadwell i Haswell mogły posiadać taką pamięć."
-  },
-  {
     "question": "W procesorze Alder Lake Intel po raz pierwszy wprowadził**",
     "answers": {
       "a": "rejestry 64-bitowe",
@@ -540,6 +528,18 @@ const quizData = [
     "explanation": "Instrukcja `lea` (load effective address) umożliwia różne operacje matematyczne, w tym dodawanie całkowite, np. `lea eax, [ebx + 4]` [31, 32]."
   },
   {
+    "question": "Która z instrukcji umożliwia dzielenie przez 8?",
+    "answers": {
+      "a": "btc",
+      "b": "sbb",
+      "c": "cmpxchg8b",
+      "d": "sar",
+      "e": "rcr"
+    },
+    "correctAnswer": "d",
+    "explanation": ""
+  },
+  {
     "question": "Która instrukcja operuje na rejestrze al**",
     "answers": {
       "a": "xlatb",
@@ -694,6 +694,18 @@ const quizData = [
     },
     "correctAnswer": "e",
     "explanation": "Instrukcja `fcomi` jest instrukcją porównującą, która wpływa na flagi procesora, w tym na flagę `CF` (Carry Flag) [39]."
+  },
+  {
+    "question": "Która z instrukcji zmienia flagę C:",
+    "answers": {
+      "a": "jnc",
+      "b": "dec",
+      "c": "adcx",
+      "d": "fxch",
+      "e": "cqo"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
   },
   {
     "question": "Która z instrukcji nie zmienia flagi ZF**",
@@ -960,6 +972,18 @@ const quizData = [
     "explanation": "Instrukcja `pshufw` służy do tasowania (zmiany kolejności) słów w rejestrze MMX [50]."
   },
   {
+    "question": "Do zmiany kolejności słów w rejestrze mmx służy instrukcja**",
+    "answers": {
+      "a": "psadbw",
+      "b": "ldmxcsr",
+      "c": "pmovmskb",
+      "d": "pextrw",
+      "e": "żadna z powyższych"
+    },
+    "correctAnswer": "e",
+    "explanation": ""
+  },
+  {
     "question": "Pakowanie z nasyceniem podwójnych słów ze znakiem do słów realizuje instrukcja**",
     "answers": {
       "a": "packsswb",
@@ -1032,18 +1056,6 @@ const quizData = [
     "explanation": "Instrukcja `vmovntdq` służy do przesyłania danych z rejestrów SIMD do pamięci bez użycia pamięci podręcznej [53]."
   },
   {
-    "question": "W którym trybie adresowania wartość argumentu zawiera w**",
-    "answers": {
-      "a": "rejestrowym",
-      "b": "bezpośrednim",
-      "c": "natychmiastowym",
-      "d": "we wszystkich powyższych",
-      "e": "w żadnym z powyższych"
-    },
-    "correctAnswer": "c",
-    "explanation": "W trybie natychmiastowym wartość argumentu jest bezpośrednio zawarta w kodzie instrukcji [54]."
-  },
-  {
     "question": "Która instrukcja nie zmienia flagi CF**",
     "answers": {
       "a": "cmpxchg",
@@ -1066,6 +1078,18 @@ const quizData = [
     },
     "correctAnswer": "a",
     "explanation": "Instrukcja `sahf` przenosi zawartość rejestru `ah` do rejestru flag. W połączeniu z `fstsw` (lub `fnstsw`) umożliwia przeniesienie flag koprocesora do flag procesora [55]."
+  },
+  {
+    "question": "Która z instrukcji nie korzysta z flag C3, C2 i C0",
+    "answers": {
+      "a": "fist",
+      "b": "ficomp",
+      "c": "fxam",
+      "d": "fcomip",
+      "e": "fstsw"
+    },
+    "correctAnswer": "d",
+    "explanation": "Instrukcja `fcomip` jako jedyna korzysta z flag procesora"
   },
   {
     "question": "Która z instrukcji pozwala na wypełnienie podanym znakiem tekstu**",
@@ -1284,7 +1308,7 @@ const quizData = [
     "explanation": "Instrukcja `vpblendvb` (Packed Blend Bytes Variable) miesza bajty z dwóch rejestrów źródłowych na podstawie maski zawartej w trzecim rejestrze [67]."
   },
   {
-    "question": "Operację AVX obliczającą przybliżoną wartość odwrotności pierwiastka z e elementów wektora liczb rzeczywistych pojedynczej precyzji realizuje instrukcja**",
+    "question": "Operację AVX obliczającą przybliżoną wartość odwrotności pierwiastka z elementów wektora liczb rzeczywistych pojedynczej precyzji realizuje instrukcja**",
     "answers": {
       "a": "vrcpps",
       "b": "vrsqrtps",
@@ -1294,6 +1318,18 @@ const quizData = [
     },
     "correctAnswer": "b",
     "explanation": "Instrukcja `vrsqrtps` oblicza przybliżoną wartość odwrotności pierwiastka kwadratowego dla każdego elementu wektora liczb rzeczywistych pojedynczej precyzji [67]."
+  },
+  {
+    "question": "Operację mieszania podwójnych słów z dwóch źródeł realizuje instrukcja:",
+    "answers": {
+      "a": "vpackssdw",
+      "b": "vmovsxdq",
+      "c": "vpblendd",
+      "d": "vpunpckldq",
+      "e": "vpermd"
+    },
+    "correctAnswer": "d",
+    "explanation": "Instrukcja `vpunpckldq` jest jedyną poprawną tutaj instrukcją"
   },
   {
     "question": "Która operacja konwertuje liczbę podwójnej precyzji na liczbę pojedynczej precyzji**",
@@ -1316,8 +1352,8 @@ const quizData = [
       "d": "pochodzą ze źródła 2",
       "e": "są niezdefiniowane"
     },
-    "correctAnswer": "a",
-    "explanation": "Podczas wykonywania operacji odejmowania skalarów na rejestrze wektorowym, pozostałe elementy celu, nieobjęte operacją, zostają wyzerowane [68]."
+    "correctAnswer": "c",
+    "explanation": "Dla skalarów, pozostałe elementy są przepisywane ze źródła 1."
   },
   {
     "question": "Podczas dodawania skalarów z rejestrów wektorowych pozostałe elementy celu**",
@@ -1328,8 +1364,8 @@ const quizData = [
       "d": "są zerowane",
       "e": "są niezdefiniowane"
     },
-    "correctAnswer": "d",
-    "explanation": "Podczas wykonywania operacji dodawania skalarów na rejestrach wektorowych, pozostałe elementy celu, nieobjęte operacją, zostają wyzerowane [68]."
+    "correctAnswer": "b",
+    "explanation": "Dla skalarów, pozostałe elementy są przepisywane ze źródła 1."
   },
   {
     "question": "Do policzenia starszych bitów równych 0 służy instrukcja**",
@@ -1366,18 +1402,6 @@ const quizData = [
     },
     "correctAnswer": "b",
     "explanation": "Instrukcja `call` zmienia zarówno rejestr `ip`, jak i rejestr `cs`. To oznacza, że wywołanie dalekie może przenieść wykonanie programu do innego segmentu kodu, zmieniając wartość rejestru `cs` [27]."
-  },
-  {
-    "question": "Do wydobycia najmłodszego bitu równego 1 służy instrukcja**",
-    "answers": {
-      "a": "xgetbv",
-      "b": "lzcnt",
-      "c": "hextr",
-      "d": "tzcnt",
-      "e": "blsi"
-    },
-    "correctAnswer": "e",
-    "explanation": "Instrukcja `blsi` służy do wydobycia najmłodszego bitu ustawionego na 1, zerując wszystkie inne bity [15]."
   },
   {
     "question": "Pierwszy procesor wielordzeniowy Intela to**",
@@ -1448,8 +1472,20 @@ const quizData = [
       "d": "vgatherdps",
       "e": "żadna z powyższych"
     },
+    "correctAnswer": "d",
+    "explanation": "VGATHER[D/Q]P[S/D]"
+  },
+  {
+    "question": "Operację AVX odczytu danych z podanych dowolnych elementów tablicy realizuje instrukcja**",
+    "answers": {
+      "a": "vgatherqq",
+      "b": "vpermq",
+      "c": "vblendd",
+      "d": "vpshufhq",
+      "e": "żadna z powyższych"
+    },
     "correctAnswer": "e",
-    "explanation": "Do odczytu danych z podanych dowolnych elementów tablicy służy instrukcja `vgatherqq`, która nie jest wymieniona wśród opcji [71, 72]."
+    "explanation": "VGATHER[D/Q]P[S/D]"
   },
   {
     "question": "Tryb prosty adresowania występuje w instrukcji**",
@@ -1628,7 +1664,7 @@ const quizData = [
       "d": "rejestrowym",
       "e": "żadne z powyższych"
     },
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": ""
   },
   {
@@ -1652,8 +1688,8 @@ const quizData = [
       "d": "cmpxchg",
       "e": "wszystkie zmieniają"
     },
-    "correctAnswer": "b",
-    "explanation": ""
+    "correctAnswer": "a",
+    "explanation": "Instrukcja INC (inkrementacja) zmienia flagi OF, SF, ZF, AF, PF, ale zachowuje flagę CF (Carry Flag) bez zmian."
   },
   {
     "question": "Po wykonaniu instrukcji: mov eax, 0eca87531h | xor eax, 0f00f0ffch | shl eax, 0ch | bsr eax, eax",
@@ -1776,27 +1812,39 @@ const quizData = [
     "explanation": ""
   },
   {
-    "question": "Operację AVX obliczającą przybliżoną wartość odwrotności pierwiastka z elementów wektora liczb rzeczywistych pojedynczej precyzji realizuje instrukcja:",
-    "answers": {
-      "a": "vrcpps",
-      "b": "vsqrtps",
-      "c": "vdpps",
-      "d": "vrsqrtps",
-      "e": "nie ma takiej instrukcji"
-    },
-    "correctAnswer": "e",
-    "explanation": ""
-  },
-  {
     "question": "Która operacja konwertuje liczbę całkowitą na liczbę pojedynczej precyzji:",
     "answers": {
       "a": "vcvtsd2ss",
-      "b": "vcvttss2sd",
-      "c": "vcvttsi2ss",
-      "d": "vcvttss2si",
+      "b": "vcvtss2sd",
+      "c": "vcvtsi2ss",
+      "d": "vcvtss2si",
       "e": "żadna z powyższych"
     },
     "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Do znalezienia indeksu najstarszego bitu równego 1 służy instrukcja:",
+    "answers": {
+      "a": "rdtsc",
+      "b": "bsr",
+      "c": "btr",
+      "d": "bextr",
+      "e": "tzcnt"
+    },
+    "correctAnswer": "c",
+    "explanation": ""
+  },
+  {
+    "question": "Operację przesłania z niewyrównanej pamięci realizuje instrukcja AVX",
+    "answers": {
+      "a": "vmovdqa",
+      "b": "vmaskmovdqu",
+      "c": "vmovntdq",
+      "d": "vmovdqu",
+      "e": "vpunkpcklqdq"
+    },
+    "correctAnswer": "d",
     "explanation": ""
   },
   {
