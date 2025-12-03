@@ -1685,7 +1685,7 @@ const quizData = [
       "a": "fbst bcdint",
       "b": "fchs st(3)",
       "c": "ftan",
-      "d": "fcmovenbe st,st(3)",
+      "d": "fcmovnbe st,st(3)",
       "e": "fsqrt st(4)"
     },
     "correctAnswer": "d",
