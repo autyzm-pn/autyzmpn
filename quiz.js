@@ -1502,14 +1502,14 @@ const quizData = [
   {
     "question": "Po wykonaniu instrukcji: mov eax, 0f0f00f0fh, mov edx, 87654321h, not ax, add dx, 7, add edx, eax rejestr edx będzie zawierał**",
     "answers": {
-      "a": "80604020h",
-      "b": "07070301h",
+      "a": "96754237h",
+      "b": "78563418h",
       "c": "07054020h",
       "d": "00600301h",
       "e": "07054022h"
     },
-    "correctAnswer": "p",
-    "explanation": "Źródło wyraźnie wskazuje, że \"Błędne zadanie, poprawna odpwiedź to: 78563418h\" [72]. Ponieważ prawidłowa odpowiedź nie znajduje się wśród opcji, pytanie jest uznane za błędne."
+    "correctAnswer": "a",
+    "explanation": ""
   },
   {
     "question": "Po wykonaniu której instrukcji zawartość al zmieni się z 0c9h na 36h**",
